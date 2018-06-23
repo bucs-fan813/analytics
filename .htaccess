@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+#RewriteBase /vendor/piwik/piwik
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} \.(js|css|png)$ [NC]
+RewriteRule ^ /analytics/vendor/piwik/piwik/%{REQUEST_FILENAME} [L,R=301]
+#RewriteRule ^ /analytics/vendor/piwik/piwik/%{REQUEST_FILENAME} [L,R=301]
+#RedirectMatch ^/analytics /analytics/vendor/piwik/piwik/
+
+#RewriteRule ^ https://%{HTTP_HOST}/vendor/piwik/piwik%{REQUEST_FILENAME} [L,R=301]
+
+</IfModule>

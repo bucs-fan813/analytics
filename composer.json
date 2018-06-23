@@ -1,0 +1,5 @@
+{
+    "require": {
+        "piwik/piwik": "^3.5"
+    }
+}
