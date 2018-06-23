@@ -1,5 +1,8 @@
 {
     "require": {
         "piwik/piwik": "^3.5"
-    }
+    },
+  "config": {
+    "vendor-dir": "/"
+  }  
 }
